@@ -19,7 +19,7 @@ const quotes = [
     quote: "You must be the change you wish to see in the world.",
     author: "Mahatma Gandhi",
   },
-]
+];
 
 const quote = document.querySelector("#quote span:first-child");
 const author = document.querySelector("#quote span:last-child");

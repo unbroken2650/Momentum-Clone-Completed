@@ -1,7 +1,7 @@
 # 바닐라 JS로 크롬 앱 만들기
 ###### https://nomadcoders.co/javascript-for-beginners
 
-21.09.27 ~
+21.09.27 ~ 21.09.30
 
 ## 2.3 const and let
 const : X redefine X change  
@@ -38,3 +38,4 @@ ARRAY.filter(FUNC) : ARRAY에 있는 모든 항목들에 대하여 FUNC를 만�
 변수명 = inputList (camelCase)
 문자열만 들어있는 변수명 = HIDDEN_CLASSNAME (모두 대문자))
 Weather API : https://openweathermap.org/
+
