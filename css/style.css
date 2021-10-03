@@ -1,17 +1,34 @@
-body{
-    height: 100%;
-    width: 100%;
-    background-position: center center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+html {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+body {
     text-align: center;
 }
-.main {
-    width: 100%;
-    height: 100%;
-    position: fixed;
+.background {
+    min-height: 100vh;
+    min-width: 100vw;
+    left:0;
+    top:0;
+    position:fixed;
+    background-position: center;
+    background-size: cover;
+    z-index: -999;   
 }
+
+#clock{
+    color: #FFFFFF;
+}
+
 .hidden {
     display: none;
+}
+#quote{
+    position:fixed;
+    bottom: 1%;
+    width:100%;
 }

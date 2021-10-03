@@ -7,12 +7,10 @@ const images =[
 
 const chosenImage = images[Math.floor(Math.random()*images.length)];
 
-const backgroundImage = document.createElement("style");
-backgroundImage.type = "text/css";
-backgroundImage.innerText = `body{
-    background-image: url("img/${chosenImage}");
-    
-        }
-`;
-
-document.head.appendChild(backgroundImage);
+const backgroundStyle = document.createElement("style");
+backgroundStyle.innerHTML = `
+.background{
+background-image: url("img/${chosenImage}")
+}`;
+console.dir(backgroundStyle);
+document.head.appendChild(backgroundStyle);
