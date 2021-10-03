@@ -12,5 +12,4 @@ backgroundStyle.innerHTML = `
 .background{
 background-image: url("img/${chosenImage}")
 }`;
-console.dir(backgroundStyle);
 document.head.appendChild(backgroundStyle);
