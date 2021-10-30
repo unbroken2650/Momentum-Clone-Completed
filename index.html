@@ -1,45 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Momentum Clone</title>
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Momentum Clone</title>
+    </head>
 
-  <body>
-    <div class="background"></div>
-    <h2 id="clock" value="00:00:00"></h2>
-    <div id="login">
-      <form id="login-form" class="hidden">
-        <input
-          required
-          maxlength="15"
-          type="text"
-          placeholder="이름을 적어주세요."
-        />
-        <input type="submit" value="클릭" />
-      </form>
-      <h1 id="greeting" class="hidden"></h1>
-    </div>
-    <div id="todo">
-      <form id="todo-form">
-        <input type="text" placeholder="오늘 당신의 할 일은?" required />
-      </form>
-      <ul id="todo-list"></ul>
-    </div>
-    <div id="weather">
-      <span></span>
-    </div>
-    <div id="quote">
-      <span></span>
-      <span></span>
-    </div>
-    <script src="js/greeting.js"></script>
-    <script src="js/clock.js"></script>
-    <script src="js/quote.js"></script>
-    <script src="js/background.js"></script>
-    <script src="js/todo.js"></script>
-    <script src="js/weather.js"></script>
-  </body>
+    <body>
+        <div class="background"></div>
+		<div id="weather">
+            <span></span>
+        </div>
+        <h2 id="clock" value="00:00:00"></h2>
+        <div id="login">
+            <form id="login-form" class="hidden">
+                <input required maxlength="15" type="text" placeholder="이름을 적어주세요." />
+                <input type="submit" value="클릭" />
+            </form>
+            <h1 id="greeting" class="hidden"></h1>
+        </div>
+        <div id="todo" class="large">
+            <button id="todoBtn" class="close">닫기</button>
+            <form id="todo-form">
+                <input type="text" placeholder="Write your Schedule" required />
+            </form>
+            <ul id="todo-list"></ul>
+        </div>
+        <div id="quote">
+            <span></span>
+            <span></span>
+        </div>
+        <script src="js/greeting.js"></script>
+        <script src="js/clock.js"></script>
+        <script src="js/quote.js"></script>
+        <script src="js/background.js"></script>
+        <script src="js/todo.js"></script>
+        <script src="js/weather.js"></script>
+    </body>
 </html>

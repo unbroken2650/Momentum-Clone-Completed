@@ -10,12 +10,12 @@ function onGeoOk(position) {
       console.log(data);
       const weatherContainer = document.querySelector("#weather span");
       const currentTemp = data.main.temp.toFixed(1);
-      weatherContainer.innerText = `${data.weather[0].description} / ${currentTemp}°C / ${data.main.humidity}%`;
+      weatherContainer.innerText = `${data.weather[0].description} / ${currentTemp}°C / ${data.main.humidity}% / ${data.name}`;
     });
 }
 
 function onGeoError() {
-  alert("당신의 위치를 찾을 수 없습니다. 😥");
+  //alert("당신의 위치를 찾을 수 없습니다. 😥");
 }
 
 navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
