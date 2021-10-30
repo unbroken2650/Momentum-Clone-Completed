@@ -22,9 +22,9 @@ function paintToDo(newTodo) {
   const span = document.createElement("span");
   span.innerText = newTodo.text;
   const btn = document.createElement("button");
-  btn.innerText = "❌"; 
+  btn.innerText = "❌";
   btn.addEventListener("click", deleteToDo);
-  
+
   li.appendChild(span);
   li.appendChild(btn);
   toDoList.appendChild(li);
@@ -32,11 +32,11 @@ function paintToDo(newTodo) {
 
 function toDoSubmit(event) {
   event.preventDefault();
-  const newTodo = toDoInput.value; 
+  const newTodo = toDoInput.value;
   toDoInput.value = "";
   const newTodoObj = {
-    text : newTodo,
-    id: Date.now(),
+    text: newTodo,
+    id: Date.now()
   };
   toDos.push(newTodoObj);
   paintToDo(newTodoObj);
