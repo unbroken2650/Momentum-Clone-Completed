@@ -80,7 +80,7 @@ body {
 }
 
 #login {
-    height: 30rem;
+    height: 10rem;
     display: flex;
     justify-content: center;
 	flex-direction: column;
